@@ -1,10 +1,8 @@
 import java.util.Scanner;
-import java.io.FileWriter;
 
 public class Main {
     public static void main(String[] args) {
         Scanner keyInput = new Scanner(System.in);
-        Boolean exit = false;
         String message;
         String method;
         String output;
@@ -42,5 +40,7 @@ public class Main {
                 System.out.println("Messaggio originale: " + cryto.xorAlgo(output, key));
                 break;
         }
+
+        keyInput.close();
     }
 }
